@@ -1,6 +1,8 @@
 .App {
-  max-width: 860px;
-  margin: 40px auto;
+        /* фиксированная ширина */
+  position: relative;
+  left: 50vw;        /* сдвигаем на половину ширины окна */
+  transform: translateX(-50%);
 }
 button {
   background: none;
@@ -11,6 +13,7 @@ button {
   font-weight: bold;
   cursor: pointer;
   font-size: 1em;
+  display: flex;
 }
 button:hover {
   background: #5cb85c;
@@ -20,17 +23,26 @@ button:hover {
   margin: 40px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 17px;
  }
 .card {
   width: 100px;
   height: 140px;
-  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 }
 
 .card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
   border-radius: 8px;
+  object-fit: cover;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.card img.flipped {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
