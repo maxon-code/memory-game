@@ -1,7 +1,6 @@
 .App {
-        /* фиксированная ширина */
   position: relative;
-  left: 50vw;        /* сдвигаем на половину ширины окна */
+  left: 50vw;
   transform: translateX(-50%);
 }
 button {
@@ -45,4 +44,40 @@ button:hover {
   transform: scale(1.1);
   filter: brightness(1.1);
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+@media (max-width: 768px) {
+  .App {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .card-grid {
+    margin: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .card {
+    width: 80px;
+    height: 110px;
+  }
+
+  button {
+    font-size: 0.9em;
+    padding: 5px 10px;
+    width: 80%;
+    justify-content: center;
+  }
+}
+@media (max-width: 480px) {
+  .card {
+    width: 65px;
+    height: 90px;
+    margin: 2px;
+  }
+
+  .card-grid {
+    gap: 4px;
+  }
 }

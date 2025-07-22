@@ -93,28 +93,29 @@ function App() {
         }
     }, [choiceOne, choiceTwo]);
 
+                        // TIME COUNTER (IN PROCESS...)
+        // const [seconds, setSeconds] = useState(0);
+        // const [minutes, setMinutes] = useState(0);
+        //
+        //
+        // useEffect(() => {
+        //     const interval = setInterval(() => {
+        //         setSeconds(prevSeconds => {
+        //             if (prevSeconds === 59) {
+        //                 setMinutes(prevMinutes => prevMinutes + 1);
+        //                 return 0;
+        //             } else {
+        //                 return prevSeconds + 1;
+        //             }
+        //         });
+        //     }, 1000);
+        //
+        //     return () => clearInterval(interval);
+        // }, []);
 
-        const [seconds, setSeconds] = useState(0);
-        const [minutes, setMinutes] = useState(0);
-
-        useEffect(() => {
-            const interval = setInterval(() => {
-                setSeconds(prevSeconds => {
-                    if (prevSeconds === 59) {
-                        setMinutes(prevMinutes => prevMinutes + 1);
-                        return 0;
-                    } else {
-                        return prevSeconds + 1;
-                    }
-                });
-            }, 1000);
-
-            return () => clearInterval(interval);
-        }, []);
 
 
 
-    // Разметка
     return (
         <>
             <div className="App">
@@ -132,7 +133,7 @@ function App() {
                     ))}
                 </div>
                 <p>Turns: {turns}</p>
-                <p>Time: {minutes < 10 ? `0${minutes}` : minutes}:{seconds < 10 ? `0${seconds}` : seconds}</p>
+                {/*<p>Time: {minutes < 10 ? `0${minutes}` : minutes}:{seconds < 10 ? `0${seconds}` : seconds}</p>*/}
             </div>
         </>
     )
