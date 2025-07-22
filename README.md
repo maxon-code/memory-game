@@ -1,3 +1,3 @@
 # React + TypeScript + Vite
 
-![alt-текст](https://previews.dropbox.com/p/thumb/ACsUaxRYPfqdMRpHL-67eiBHrhL4AGQZSuFbfOqMNbfCv8_XbCjLg0C1n9eaMQVkx1XlEmDS0lMQrHRCx4SFS2w94BOMLhnguOXxSZitf0UEyGW4ykC_nUgUM1pGvQ39wB31FgFGxTz3vu6f93pbPVKVdRGvIezp9UEn8C9zXsnjU2ufrZNVGlMgzM67fryppm5OLNuzm1dbeJ3STSLm6usuuM_RCi1hBwneVwUl4lfyhSTdk9JgyW8MOlgckqBv8Rw6EmL4s_uUGioCzznHP0TMIf8fOqt1XB2zJikubY0UHWkiWn4W8GYtNk46PR9elcLG8zHyx20YlSu3Evsir9pH/p.png?is_prewarmed=true)
+![alt-текст](./PREVIEW.png)
